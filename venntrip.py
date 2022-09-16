@@ -75,9 +75,9 @@ if st.checkbox('Add a suggestion here:'):
     st.write("[Click here to add a suggestion](https://docs.google.com/spreadsheets/d/12ZQKfUnnnPuWtn0BYLCK_E2BxNigchI7HryYQSEOvI4/edit?usp=sharing)")
     st.write("Make sure to fill out all of the columns - or youll probably break the program")
     st.write("The google link needs start with https://www.google.com/maps/place/ or your suggestion will not be added to the map")
-    st.write("If you add something to the list you need to reload the cache on the app before you can see it on the map. Upper right of the app.")
     image1 = Image.open("1.jpg")
     st.image(image1)
+    st.write("If you add something to the list you need to reload the cache on the app before you can see it on the map. Upper right of the app.")
     st.write("-----------------------------------")
 
 
