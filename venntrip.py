@@ -3,6 +3,7 @@ import gspread
 import gmaps
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2 import service_account
 
 
 import streamlit as st
@@ -27,7 +28,7 @@ def get_data():
     scope_app = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive'] 
 
     #credentials to the account
-    cred = ServiceAccountCredentials.from_json_keyfile_name('venntrip-e7a6f71bd13c.json',scope_app) 
+    cred = service_account.Credentials.from_service_account_info(st.secrets["gcp_service_account"],scope_app)
 
     # authorize the clientsheet 
     client = gspread.authorize(cred)

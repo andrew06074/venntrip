@@ -1,1 +1,3 @@
 venv/
+/.streamlit/secrets.toml
+venntrip-e7a6f71bd13c.json
