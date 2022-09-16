@@ -43,26 +43,26 @@ def get_data():
 
     records_df = pd.DataFrame.from_dict(records)
 
+    #join with colors for map pin color
+    colors_df = pd.read_excel('colors.xlsx')
+    records_df = pd.merge(records_df,colors_df,how='left',on='Idea by')
+
+    #clean url for lon lat data
     records_df['Stripped links'] = records_df['Google link'].str.lstrip("https://www.google.com/maps/place/")
-
     new_cols = records_df['Stripped links'].str.split("@",n=1,expand=True)
-
     records_df['trash'] = new_cols[0]
     records_df['keep'] = new_cols[1]
-
     records_df.drop(columns=['Stripped links'],inplace=True)
     records_df['keep']
-
     new_cols = records_df['keep'].str.split(",",n=1,expand=True)
     records_df['lat'] = new_cols[0]
     records_df['keep_for_lon'] = new_cols[1]
-
     new_cols = records_df['keep_for_lon'].str.split(",",n=1,expand=True)
     records_df['lon'] = new_cols[0]
-
     records_df.drop(columns=['keep_for_lon'],inplace=True)
     records_df.drop(columns=['trash'],inplace=True)
     records_df.drop(columns=['keep'],inplace=True)
+    #url cleaned
 
     df_after_lon_lat_merge = records_df
 
@@ -128,14 +128,18 @@ if include_suggestions == 'Yes':
 elif include_suggestions == 'No':
      df_after_lon_lat_merge = df_after_lon_lat_merge.loc[df_after_lon_lat_merge['Idea by']!='Tim']
 
+
+
 m = folium.Map(location=location,zoom_start=zoom_start)
 for index,row in df_after_lon_lat_merge.iterrows():
     folium.Marker([row['lat'],row['lon']],
     popup=(f"""Link to <a href={row['Google link']}>{row['Name']}</a><br><br> Description:{row['Description']}"""),
-    tooltip=f"""Name:{row['Name']} <br><br> Suggested by:{row['Idea by']} """).add_to(m)
+    tooltip=f"""Name:{row['Name']} <br><br> Suggested by:{row['Idea by']} """,
+    icon=folium.Icon(color=row['Color'])).add_to(m)
     
 
 st_data = st_folium(m,width=725)
+
 
 
 
