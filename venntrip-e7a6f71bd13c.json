@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "venntrip",
+  "private_key_id": "e7a6f71bd13c7f49b18a712a7dade5a301ff947f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmCAIj1lmMygOc\nurE37hxb7Fk/BnG8svvAvO6c5XamkONWGzl0CUU/LBf7OtLkX6LTtaq6xtvg/xfk\nfaxgwP6NqXBMQCqN65I+opN9bW8NN1wRMDuGSGTxC4joA+YXaEOnhHRL2OPJwtcN\n+Jz+XMN6BgF0OHw1nhGFaU1GHpZtOx+f9mSUgq+xZUgxsRWDxcAGelPdiRYDfAkp\nqHJyLEw2T7EXjjN0K1YgIr+yBH+9o4Uq+EXIqIyw6atP/B2r3ns4epSzS6pbqU34\nUjI3XxL6pzv7s19TQlEjuAQ4Wvxy0vUz59+69wUD4m/xjTJwFJr5rJxt4eRv/GRi\nSE3azHkTAgMBAAECggEAFye+xKi8THpQDqeq15YJtng76iJH8n0zxymSTadi6NAE\nJJofZSN12N2ZapxFlTwRRV1stifNuo9ZEbDFPaks1yzuUHQSe0CDYODjmPaOKlWy\nLWOAqbWm/kcRjOoeSN1tsgsy/PD+s8DMpVIq8v6U9Iup4D+Qcxncb7LD6CeT6x++\nBIIL0dtfZ73hQk+9Bq+DfKDW6Gbm8M7oAa8xv/hIBxJ+J9XJ7jIEtIzSL5HS/QtJ\n9h8/rPWotnYQAczEs4ZbL5pSrzHWq80f6bsmne2h7nsb/Ps/vpdRL4h3cxHwrDro\n2xrN2etK9RuikOGtsl1+LDLI4unnxvyJbVh8mNRIwQKBgQDiNHKpiU9P2VWuUExP\nhb4NCiEGxDLizx8grJ84Qpri/NrJn529bSJJCT2I5FNvztsUpAPxB4i/G2JYz7Oi\nmuEFXfu9BvNlQmSs+lViQhTOSQIP+KPyQ3stwW5IYYqc8sCrMaZR7jXJAtAbrU3X\nkZBt4UyjkJK9VA8UHg9g2wTCGQKBgQC75ob4cRAo+L06Mnqjh5gNK4GlkmVX2R1c\nikdPfvGmMIkJPOX+CdZxLUJ2ba1nzMXHUJVjFssrd1A+c2CcOHPq4A4SOZs277V0\nxTZGzA3iqP1GOcE0i2D38lGazUCG/OPgTapHpUlVFrvY5s2t4svdDgp1gwr1yeiY\ns06325FyCwKBgQDRqx+k+XskXiTG//LbuvHgEEVwiidIiAcoOBkVAteiEhGR1XtW\ne3POEtyQqGKWPjxfM2/b18nuqalM/KhazghI+0Y9fdXZQ+MhWqAOBYZXduCMgUEl\na1sfnC1mtdLPi0r+43RweMYt3YecP9TpPSmMT8rDyVvaVbHsSbijZB9S8QKBgA7o\nq6zqy610jw8fEjwHdjkVSqQoiYH+6CV/k0jreaEGGNlyy4zsmudAABYFfczOoqK9\n8hx6ooRAY02ROgkrMYdhX7xyda5WNr+dJkFXz4I8hlwcGQhiRr9lqrPttUEAr9QM\nVYZ5xufJdf4v0gIKDMLtakcIrsXxz1LOZ2CPO2shAoGAQlnYcUFYAcEC1HTUcbyH\nWxtONbMJ3+Ep1W3ANRvvdKuVnctWP0Tfbxi9zH+2jJ1wXl2ZC0wwluW4rt82iPah\n36jQaMfoOGBR7heX82YQipykv6gZFMJHtSHQcBUFqhoDwnWIvhhtrWpeZdTwaqxD\nvcMFYXYbQgBMy5HJRweiYUU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "svcadmin@venntrip.iam.gserviceaccount.com",
+  "client_id": "112961922220663246293",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/svcadmin%40venntrip.iam.gserviceaccount.com"
+}
