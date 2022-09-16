@@ -77,6 +77,7 @@ if st.checkbox('Add a suggestion here:'):
     st.write("The google link needs start with https://www.google.com/maps/place/ or your suggestion will not be added to the map")
     image1 = Image.open("1.jpg")
     st.image(image1)
+    st.write("You can get the google/places url by typing the name of the location you are adding into the link above")
     st.write("If you add something to the list you need to reload the cache on the app before you can see it on the map. Upper right of the app.")
     st.write("-----------------------------------")
 
